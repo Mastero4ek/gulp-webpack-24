@@ -1,0 +1,9 @@
+@use 'sass:math';
+
+@import 'config/fonts';
+@import 'config/vars';
+@import 'config/mixins';
+@import 'config/reset';
+
+@import 'components/header';
+@import 'components/footer';
