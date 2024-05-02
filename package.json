@@ -1,7 +1,6 @@
 {
-  "name": "gulp-webpack",
+  "name": "allergo-sprint",
   "version": "1.0.0",
-  "description": "Сборка Gulp+Webpack+Babel",
   "main": "gulpfile.js",
   "type": "module",
   "scripts": {

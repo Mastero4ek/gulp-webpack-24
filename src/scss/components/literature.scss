@@ -1,0 +1,105 @@
+.literature {
+    background-color: var(--greyBg);
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        padding: 3.8rem 0;
+        gap: 0.5rem;
+
+        span {
+            margin-top: 1rem;
+        }
+    }
+
+    &__subtitle {
+        color: #36383F;
+        font-family: "Montserrat", sans-serif;
+        @include font(500, 1.2rem, 140%);
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem;
+        color: #36383F;
+        font-family: "Montserrat", sans-serif;
+        @include font(400, 1.1rem, 150%);
+
+        a {
+            color: #36383F;
+        }
+    }
+}
+
+@media (min-width:120em) {
+    .literature {
+        background-color: var(--greyBg);
+
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            padding: 38px 0;
+            gap: 5px;
+
+            span {
+                margin-top: 10px;
+            }
+        }
+
+        &__subtitle {
+            color: #36383F;
+            font-family: "Montserrat", sans-serif;
+            @include font(500, 12px, 140%);
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+            color: #36383F;
+            font-family: "Montserrat", sans-serif;
+            @include font(400, 11px, 150%);
+
+            a {
+                color: #36383F;
+            }
+        }
+    }
+}
+
+@media (max-width:48em) {
+    .literature {
+        background-color: var(--greyBg);
+
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            padding: 3rem 0;
+            gap: 1rem;
+
+            span {
+                margin-top: 1rem;
+            }
+        }
+
+        &__subtitle {
+            color: #36383F;
+            font-family: "Montserrat", sans-serif;
+            @include font(500, 1.6rem, 140%);
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            color: #36383F;
+            font-family: "Montserrat", sans-serif;
+            @include font(400, 1.2rem, 150%);
+
+            a {
+                color: #36383F;
+            }
+        }
+    }
+}

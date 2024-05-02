@@ -1,0 +1,96 @@
+.asit {
+    position: relative;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 3.5rem;
+    }
+
+    &__rootTitle {
+        color: var(--green);
+        @include font(300, 4.8rem, 120%);
+
+        b {
+            font-weight: 700;
+        }
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5rem;
+
+        &-card:nth-child(2) {
+            p {
+                @include font(400, 2rem, 140%);
+            }
+        }
+    }
+}
+
+@media (min-width:120em) {
+    .asit {
+        position: relative;
+
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 35px;
+        }
+
+        &__rootTitle {
+            color: var(--green);
+            @include font(300, 48px, 120%);
+
+            b {
+                font-weight: 700;
+            }
+        }
+
+        &__content {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 50px;
+
+            &-card:nth-child(2) {
+                p {
+                    @include font(400, 20px, 140%);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:48em) {
+    .asit {
+        position: relative;
+
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+        }
+
+        &__rootTitle {
+            color: var(--green);
+            @include font(300, 3rem, 120%);
+
+            b {
+                font-weight: 700;
+            }
+        }
+
+        &__content {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2.5rem;
+
+            &-card:nth-child(2) {
+                p {
+                    @include font(400, 1.2rem, 140%);
+                }
+            }
+        }
+    }
+}

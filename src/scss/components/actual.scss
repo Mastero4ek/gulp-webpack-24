@@ -1,0 +1,131 @@
+.actual {
+    position: relative;
+
+    &__decor {
+        position: absolute;
+        width: auto;
+        top: 10rem;
+        right: 0;
+        height: 57rem;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    &__subtitle {
+        padding-right: 5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    &__content {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 3rem;
+    }
+
+    &__desc {
+        width: 64rem;
+    }
+
+    &__card {
+        width: 64rem;
+
+        &-subtitle {
+            color: var(--green);
+        }
+    }
+}
+
+@media (min-width:120em) {
+    .actual {
+        position: relative;
+
+        &__decor {
+            position: absolute;
+            width: auto;
+            top: 100px;
+            right: 0;
+            height: 570px;
+        }
+
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 150px;
+        }
+
+        &__subtitle {
+            padding-right: 50px;
+            margin-bottom: 15px;
+        }
+
+        &__content {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        &__desc {
+            width: 640px;
+        }
+
+        &__card {
+            width: 640px;
+
+            &-subtitle {
+                color: var(--green);
+            }
+        }
+    }
+}
+
+@media (max-width:48em) {
+    .actual {
+        position: relative;
+
+        &__decor {
+            position: absolute;
+            width: auto;
+            top: 10rem;
+            right: 0;
+            height: 57rem;
+            display: none;
+        }
+
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        &__subtitle {
+            padding-right: 0;
+            margin-bottom: 1rem;
+        }
+
+        &__content {
+            display: flex;
+            align-items: flex-start;
+            justify-content: unset;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        &__desc {
+            width: 98%;
+        }
+
+        &__card {
+            width: 100%;
+
+            &-subtitle {
+                color: var(--green);
+            }
+        }
+    }
+}

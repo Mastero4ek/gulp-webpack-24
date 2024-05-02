@@ -1,35 +1,36 @@
 <!DOCTYPE html>
 <html lang="ru">
-@@include('html/head.html', {
-'title': 'Главная'
-})
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title></title>
+
+  <link rel="shortcut icon" href="" type="image/x-icon">
+  <link rel="stylesheet" href="css/main.min.css">
+
+  <script defer src="js/main.min.js"></script>
+</head>
 
 <body>
-  @@include('html/header.html')
-
   <main class="page">
-    <div data-observ></div>
+    <!-- <div data-observ></div> -->
 
-    <div class="container">
-      <h1 style="text-align: center; font-size: 4rem;">Home</h1>
-
-      <div style="margin: 0 auto; width: 50rem; height: auto;" class="image">
-        <img src="" alt="avatar">
-      </div>
-
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum adipisci explicabo fuga non earum nostrum fugiat
-        sapiente deserunt dolores! Facilis, voluptates ipsam corrupti reiciendis consequuntur labore impedit. Obcaecati,
-        velit perferendis?
-        Enim praesentium id aut suscipit commodi tempore! Hic maxime cupiditate asperiores atque facere ut sit
-        repellendus pariatur, ipsa possimus, sint in culpa illo quidem veniam sapiente incidunt, earum ad
-        exercitationem?
-        Quaerat accusantium sint, asperiores quibusdam in numquam unde molestias alias minus dolor, harum enim quas amet
-        perspiciatis ipsum rem! Cupiditate voluptatibus cumque, veritatis aperiam debitis sapiente eveniet vitae et?
-        Veniam!</p>
-    </div>
+    @@include('html/intro.html')
+    @@include('html/actual.html')
+    @@include('html/influence.html')
+    @@include('html/symptoms.html')
+    @@include('html/mechanism.html')
+    @@include('html/diagnostics.html')
+    @@include('html/treatment.html')
+    @@include('html/advantages.html')
+    @@include('html/asit.html')
+    @@include('html/programs.html')
+    @@include('html/congratulation.html')
+    @@include('html/literature.html')
   </main>
-
-  @@include('html/footer.html')
 </body>
 
 </html>

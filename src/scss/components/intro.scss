@@ -1,0 +1,197 @@
+.intro {
+    position: relative;
+
+    &__decor-blob {
+        position: absolute;
+        width: 68rem;
+        height: auto;
+        top: 0;
+        right: 0;
+    }
+
+    &__decor-back {
+        position: absolute;
+        width: auto;
+        height: 56.8rem;
+        left: 0;
+        top: 7rem;
+    }
+
+    &__wrapper {
+        padding-top: 8rem;
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+
+        hr {
+            width: 100%;
+            border-radius: .3rem;
+            color: #F3F4F6;
+        }
+    }
+
+    &__title {
+        @include font(700, 5.6rem, 120%);
+
+        span {
+            font-weight: 400;
+        }
+    }
+
+    &__wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5rem;
+    }
+
+    &__content {
+        width: 60.5rem;
+        display: flex;
+        flex-direction: column;
+        text-align-last: left;
+        align-items: flex-start;
+        gap: 2.4rem;
+    }
+
+    &__image {
+        width: 64rem;
+        height: 42rem;
+        border-radius: 2.4rem;
+        overflow: hidden;
+    }
+}
+
+@media (min-width:120em) {
+    .intro {
+        position: relative;
+
+        &__decor-blob {
+            position: absolute;
+            width: 680px;
+            height: auto;
+            top: 0;
+            right: 0;
+        }
+
+        &__decor-back {
+            position: absolute;
+            width: auto;
+            height: 568px;
+            left: 0;
+            top: 70px;
+        }
+
+        &__wrapper {
+            padding-top: 80px;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+
+            hr {
+                width: 100%;
+                border-radius: 3px;
+                color: #F3F4F6;
+            }
+        }
+
+        &__title {
+            @include font(700, 56px, 120%);
+
+            span {
+                font-weight: 400;
+            }
+        }
+
+        &__wrap {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+        }
+
+        &__content {
+            width: 605px;
+            display: flex;
+            flex-direction: column;
+            text-align-last: left;
+            align-items: flex-start;
+            gap: 24px;
+        }
+
+        &__image {
+            width: 640px;
+            height: 420px;
+            border-radius: 24px;
+            overflow: hidden;
+        }
+    }
+}
+
+@media (max-width:48em) {
+    .intro {
+        position: relative;
+
+        &__decor-blob {
+            position: absolute;
+            width: 15rem;
+            height: auto;
+            top: 0;
+            right: 0;
+        }
+
+        &__decor-back {
+            position: absolute;
+            width: auto;
+            height: 56.8rem;
+            left: 0;
+            top: 7rem;
+            display: none;
+        }
+
+        &__wrapper {
+            padding-top: 3rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+
+            hr {
+                width: 100%;
+                border-radius: .3rem;
+                color: #F3F4F6;
+            }
+        }
+
+        &__title {
+            @include font(700, 3rem, 120%);
+
+            span {
+                font-weight: 400;
+            }
+        }
+
+        &__wrap {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 2.5rem;
+        }
+
+        &__content {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            text-align-last: left;
+            align-items: flex-start;
+            gap: 1.5rem;
+        }
+
+        &__image {
+            width: 100%;
+            height: auto;
+            border-radius: 4rem;
+            overflow: hidden;
+        }
+    }
+}

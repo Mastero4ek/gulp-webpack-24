@@ -5,5 +5,15 @@
 @import 'config/mixins';
 @import 'config/reset';
 
-@import 'components/header';
-@import 'components/footer';
+@import 'components/intro.scss';
+@import 'components/actual.scss';
+@import 'components/influence.scss';
+@import 'components/symptoms.scss';
+@import 'components/mechanism.scss';
+@import 'components/diagnostics.scss';
+@import 'components/treatment.scss';
+@import 'components/advantages.scss';
+@import 'components/asit.scss';
+@import 'components/programs.scss';
+@import 'components/congratulation.scss';
+@import 'components/literature.scss';

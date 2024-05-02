@@ -1,0 +1,105 @@
+.symptoms {
+    position: relative;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    &__subtitle {
+        margin-top: 1.5rem;
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__top-subtitle {
+        color: var(--blueLight);
+        margin-bottom: 1.5rem;
+    }
+
+    &__card-subtitle {
+        @include font(400, 2rem, 140%);
+
+        a {
+            color: var(--blueLight);
+            text-decoration-line: underline;
+            @include font(700, 2rem, 140%);
+        }
+    }
+}
+
+@media (min-width:120em) {
+    .symptoms {
+        position: relative;
+
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        &__subtitle {
+            margin-top: 15px;
+        }
+
+        &__content {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        &__top-subtitle {
+            color: var(--blueLight);
+            margin-bottom: 15px;
+        }
+
+        &__card-subtitle {
+            @include font(400, 20px, 140%);
+
+            a {
+                color: var(--blueLight);
+                text-decoration-line: underline;
+                @include font(700, 20px, 140%);
+            }
+        }
+    }
+}
+
+@media (max-width:48em) {
+    .symptoms {
+        position: relative;
+
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        &__subtitle {
+            margin-top: 1rem;
+        }
+
+        &__content {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        &__top-subtitle {
+            color: var(--blueLight);
+            margin-bottom: 1rem;
+        }
+
+        &__card-subtitle {
+            @include font(400, 1.4rem, 140%);
+
+            a {
+                color: var(--blueLight);
+                text-decoration-line: underline;
+                @include font(700, 1.4rem, 140%);
+            }
+        }
+    }
+}
